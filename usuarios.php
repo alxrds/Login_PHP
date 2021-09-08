@@ -139,9 +139,9 @@
     <script src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
 
 
-    <script>
+  <script>
 
-      $(document).ready(function(){
+    $(document).ready(function(){
       fetchUser(); 
       function fetchUser(){
         var action = "Load";
@@ -230,10 +230,9 @@
         return false; 
         }
       });
-      });
+    });
 
-</script>
-
+  </script>
 
   </body>
 </html>

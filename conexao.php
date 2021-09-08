@@ -19,5 +19,3 @@
     }
 
     $PDO->exec("set names utf8");
-
-?>
