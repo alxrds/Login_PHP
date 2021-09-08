@@ -1,0 +1,202 @@
+html, body {
+    font-family: 'Baloo Tamma 2', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f1f1f1;
+}
+
+
+.container{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    align-self: center;
+    
+}
+
+.container .welcome{
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.container div {
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container select {
+
+    min-width: 220px;
+    max-width: 300px;
+
+}
+
+.container input {
+
+    min-width: 220px;
+    max-width: 300px;
+
+}
+
+header {
+
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
+
+}
+
+header h3{
+
+    padding-top: 30px;
+}
+
+header .menu{
+
+    display: flex;
+    justify-content:space-between;
+    padding: 20px;
+
+}
+
+main{
+
+    grid-column: 2;
+    grid-row: 2;
+
+}
+
+main .box-msg{
+
+    text-align: center;
+    padding: 20px;
+
+}
+
+main .box-login{
+
+    width: auto;
+    background-color: white;
+    border-radius:10px;
+    padding: 40px;
+}
+
+main .box-login button{
+
+    width: 100%;
+    padding: 10px;
+}
+
+main .box-login .b2{
+
+    padding-top: 30px;
+    text-align: center;
+
+}
+
+main .box-login a{
+
+    text-decoration: none;
+
+}
+
+footer {
+
+    text-align: center;
+    grid-column: 2;
+    grid-row: 3;
+
+}
+
+.menu, .sub-menu {
+
+    text-align: left;
+    margin: 0;
+    padding: 0;
+
+}
+
+.clearfix:after{
+
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    overflow: hidden;
+
+}
+
+.menu, .sub-menu, li {
+
+    list-style: none;
+
+
+}
+
+.sub-menu {
+
+    background: white;
+
+}
+
+.menu a {
+
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+
+}
+
+.menu li {
+
+    position: relative;
+
+}
+
+.menu > li {
+
+    float: left;
+
+}
+
+.menu > li:hover {
+
+    background: white;
+    text-align: left;
+
+}
+
+.menu li:hover > .sub-menu {
+
+    display: block;
+
+}
+
+.sub-menu {
+
+    display: none;
+    position: absolute;
+
+}
+
+.sub-menu li:hover {
+
+    background: rgb(218, 209, 209);
+
+}
+
+.sub-menu .sub-menu {
+
+    top: 0;
+
+}
+
